@@ -28,7 +28,7 @@ export const useLogin = () => {
     }
     if (response.ok) {
       //Saving the user details to the local storage
-      localStorage.setItem("user", JSON.stringify(json));
+      localStorage.setItem("seleniaAuthToken", JSON.stringify(json));
 
       //Updating the auth context
       dispatch({ type: "LOGIN", payload: json });
@@ -36,5 +36,6 @@ export const useLogin = () => {
       setIsLoading(false);
     }
   };
+
   return { login, isLoading, error };
 };

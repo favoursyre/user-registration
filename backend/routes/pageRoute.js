@@ -2,8 +2,11 @@
 
 //Libraries -->
 const express = require("express");
-const { homePage } = require("../controllers/pageController");
-const { loginPage, signupPage } = require("../controllers/userController");
+const {
+  homePage,
+  loginPage,
+  signupPage,
+} = require("../controllers/pageController");
 
 //Commencing the app
 const router = express.Router();

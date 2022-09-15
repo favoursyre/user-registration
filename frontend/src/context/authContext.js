@@ -27,7 +27,7 @@ export const AuthContextProvider = ({ children }) => {
 
   //This checks if the user data is still available in the local storage or not
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(localStorage.getItem("seleniaAuthToken"));
     if (user) {
       dispatch({ type: "LOGIN", payload: user });
     }

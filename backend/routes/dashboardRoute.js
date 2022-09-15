@@ -1,4 +1,4 @@
-//This handles the various pages for the selenia dashboard
+//This handles the various pages for the selenia dashboard, all pages here would require user authentication
 
 //Libraries -->
 const express = require("express");

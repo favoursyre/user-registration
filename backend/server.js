@@ -5,7 +5,6 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const pageRoutes = require("./routes/pageRoute");
-//const userRoutes = require("./routes/userRoute");
 const dashboardRoutes = require("./routes/dashboardRoute");
 
 //Commencing the app
@@ -22,7 +21,6 @@ app.use((req, res, next) => {
 
 //Routes
 app.use("/", pageRoutes);
-//app.use("/", userRoutes);
 app.use("/", dashboardRoutes);
 
 //Connecting the app to MongoDB
