@@ -1,4 +1,4 @@
-//This handles the client side for Selenia
+//This handles the client side for Haber
 
 //Libraries -->
 import { BrowserRouter, Routes, Route } from "react-router-dom";

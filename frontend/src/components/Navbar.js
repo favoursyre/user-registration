@@ -18,7 +18,7 @@ const Navbar = () => {
     <header>
       <div className="container">
         <Link to="/">
-          <h1>Selenia</h1>
+          <h1>Haber</h1>
         </Link>
         <nav>
           {/* This checks if the user is logged in or not */}

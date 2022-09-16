@@ -1,4 +1,4 @@
-//This handles the various functions for the pages
+//This handles the various functions for the page links
 
 //Libraries -->
 const jwt = require("jsonwebtoken");

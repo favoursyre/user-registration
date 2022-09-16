@@ -8,13 +8,13 @@ import { useAuthContext } from "./useAuthContext";
 export const useDashboard = () => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(null);
-  const { dispatch } = useAuthContext();
+  const { user } = useAuthContext();
 
   const dashboard = async () => {
     setIsLoading(null);
     setError(null);
 
-    const token = JSON.parse(localStorage.getItem("seleniaAuthToken"));
+    const token = JSON.parse(localStorage.getItem("haberAuthToken"));
     const response = await fetch("/dashboard", {
       method: "GET",
       headers: {
@@ -25,6 +25,7 @@ export const useDashboard = () => {
     const json = await response.json();
     console.log("Dashboard Json: ", json);
     console.log("Status: ", response.ok);
+    console.log("User: ", user);
 
     if (!response.ok) {
       setIsLoading(false);

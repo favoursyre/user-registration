@@ -28,7 +28,7 @@ export const useSignup = () => {
     }
     if (response.ok) {
       //Saving the user details to the local storage
-      localStorage.setItem("seleniaAuthToken", JSON.stringify(json));
+      localStorage.setItem("haberAuthToken", JSON.stringify(json));
 
       //Updating the auth context
       dispatch({ type: "LOGIN", payload: json });

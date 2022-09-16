@@ -1,8 +1,13 @@
-//This handles the various pages for the selenia dashboard, all pages here would require user authentication
+//This handles the various pages for the haber dashboard, all pages here would require user authentication
 
 //Libraries -->
 const express = require("express");
-const { dashboardPage } = require("../controllers/dashboardController");
+const {
+  dashboardPage,
+  updateWallet,
+  getWallets,
+  createWallet,
+} = require("../controllers/dashboardController");
 const requireAuth = require("../middleware/requireAuth");
 
 //Commencing the app
@@ -13,5 +18,11 @@ router.use(requireAuth);
 
 //Dashboard
 router.get("/dashboard", dashboardPage);
+
+//Get all wallets
+router.get("/dashboard/wallet", getWallets);
+
+//Create a wallet
+router.post("/dashboard/wallet", createWallet);
 
 module.exports = router;

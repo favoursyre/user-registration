@@ -1,4 +1,4 @@
-//This handles the server side for the Selenia
+//This handles the server side for the Haber
 
 //Libraries -->
 require("dotenv").config();

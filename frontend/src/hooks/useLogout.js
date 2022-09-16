@@ -9,7 +9,7 @@ export const useLogout = () => {
 
   const logout = () => {
     //Removing user from storage
-    localStorage.removeItem("seleniaAuthToken");
+    localStorage.removeItem("haberAuthToken");
 
     //dispatch logout action
     dispatch({ type: "LOGOUT" });
