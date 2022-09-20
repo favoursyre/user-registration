@@ -30,17 +30,18 @@ This is a simple user registration template
 - Node JS
 
 ## Installations
-
+- Clone the git repository
 ```bash
 git clone https://github.com/favoursyre/user-registration.git && cd user-registration
 ```
+- Set the various environment variables in the backend folder
 
-Run npm install in both backend and frontend folder
+- Run npm install in the backend folder
 
 ```bash
 cd backend && npm install
 ```
-
+- Run npm install in the frontend folder
 ```bash
 cd frontend && npm install
 ```
