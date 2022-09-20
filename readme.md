@@ -1,4 +1,4 @@
-# Selenia
+# User Registration Template
 
 ## Table of Contents
 
@@ -11,12 +11,12 @@
 
 ## Overview
 
-Selenia is a DeFi Protocol that allows users to store and exchange their cryptocurrencies
+This is a simple user registration template
 
 ## Features
 
-- It provides wallet service to customers
-- It allows for cryptocurrency exchange
+- It has user registration page
+- It has user login page
 
 ## Languages
 
@@ -28,12 +28,11 @@ Selenia is a DeFi Protocol that allows users to store and exchange their cryptoc
 - Mongo DB
 - Express JS
 - Node JS
-- Tatum
 
 ## Installations
 
 ```bash
-git clone https://github.com/favoursyre/selenia.git && cd selenia
+git clone https://github.com/favoursyre/user-registration.git && cd user-registration
 ```
 
 Run npm install in both backend and frontend folder
