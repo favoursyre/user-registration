@@ -37,9 +37,33 @@ const loginPage = async (req, res) => {
 
 //Signup page
 const signupPage = async (req, res) => {
-  const { email, dateOfBirth, password } = req.body;
+  const {
+    firstName,
+    lastName,
+    displayName,
+    email,
+    dateOfBirth,
+    phoneNumber,
+    password,
+    passwordCopy,
+    country,
+    state,
+    referralID,
+  } = req.body;
   try {
-    const user = await User.signup(email, dateOfBirth, password);
+    const user = await User.signup(
+      firstName,
+      lastName,
+      displayName,
+      email,
+      dateOfBirth,
+      phoneNumber,
+      password,
+      passwordCopy,
+      country,
+      state,
+      referralID
+    );
     const token = createToken(user._id);
     res.status(200).json({ token });
   } catch (error) {

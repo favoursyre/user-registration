@@ -16,6 +16,8 @@ const router = express.Router();
 //This requires auth for all routes below
 router.use(requireAuth);
 
+//Verification page
+
 //Dashboard
 router.get("/dashboard", dashboardPage);
 

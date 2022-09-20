@@ -14,9 +14,9 @@ const router = express.Router();
 //Homepage
 router.get("/", homePage);
 
-//About page
+//About route
 
-//Contact us page
+//Contact-Us route
 
 //Login route
 router.post("/login", loginPage);
@@ -24,7 +24,12 @@ router.post("/login", loginPage);
 //Signup route
 router.post("/signup", signupPage);
 
-//Verification
-//router.post("/verification", verificationPage);
+//Documentation route
+
+//Terms of services route
+
+//Privacy Policy route
+
+//Customer protection route
 
 module.exports = router;

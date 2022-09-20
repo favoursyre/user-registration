@@ -87,6 +87,7 @@ userSchema.statics.signup = async function (
   dateOfBirth,
   phoneNumber,
   password,
+  passwordCopy,
   country,
   state,
   referralID
@@ -100,6 +101,7 @@ userSchema.statics.signup = async function (
     dateOfBirth,
     phoneNumber,
     password,
+    passwordCopy,
     country,
     state,
     referralID
@@ -125,6 +127,8 @@ userSchema.statics.signup = async function (
     throw Error("Phone Number is required");
   } else if (!password) {
     throw Error("Password is required");
+  } else if (!passwordCopy) {
+    throw Error("Verify password is required");
   } else if (!country) {
     throw Error("Country is required");
   } else if (!state) {
@@ -137,6 +141,11 @@ userSchema.statics.signup = async function (
     );
   } else if (!referralID) {
     referralID = "null";
+  }
+
+  //Checking to see if the two passwords match
+  if (password !== passwordCopy) {
+    throw Error("The two password doesn't match");
   }
 
   //Checking to see if the email already exists
